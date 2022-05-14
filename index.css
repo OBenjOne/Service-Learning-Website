@@ -1,0 +1,370 @@
+*
+{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+H1
+{
+    font-size : 32px;
+    float : left;
+    display : flex;
+    align-items: center;
+    padding-left : 10px;
+    padding-top : 15px;
+    font-family: 'Montserrat', sans-serif;
+    color : whitesmoke;
+    justify-content:center;
+}
+
+.logo_text
+{
+    background-color: #3B3B3B;
+    /* box-shadow: 4px 4px 1px skyblue; */
+    padding-top : 8px;
+    padding-bottom: 8px;
+    padding-left : 15px;
+    padding-right : 15px;
+
+    border-width : 2px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+main
+{
+    min-height: calc(100vh);
+}
+
+body
+{
+    background-color: #3b92ad;
+    width: 100%;
+    height: 100%;
+}
+
+article 
+{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+a
+{
+    text-decoration : none;
+    padding-left: 10px ;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-radius : 20px;
+}
+
+.navigation_links
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    list-style: none;
+    text-align: right;
+    background-color: #0291bd; 
+    padding-right : 15px;
+}
+
+.navigation_links li
+{
+    display : inline-block;
+    padding : 30px 20px;
+}
+
+.navigation_links li a
+{
+    color : white;
+    transition : all 0.2s linear;
+}
+
+.navigation_links li a:hover
+{
+    color : black;
+}
+
+.sl_photo
+{
+    background : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(./servicelearningresized.jpg);
+    height: 500px;
+    background-repeat : no-repeat;
+    position: relative;
+}
+
+#sl_text
+{
+    font-size : 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display : flex;
+    text-align: center;
+    justify-content: center;
+    position : absolute;
+    top : 30%;
+    left : 11%;
+    right : 11%;
+}
+
+#sl_text2
+{
+    font-size : 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display : flex;
+    text-align: center;
+    justify-content: center;
+    position : absolute;
+    top : 63%;
+    left : 14.25%;
+    right : 14.25%;
+}
+
+H2
+{
+    font-size : 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display : flex;
+    text-align: center;
+    justify-content: center;
+    margin-top : 30px;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    margin-right : 20px;
+    
+}
+
+H2 span
+{
+    background-color: #205869;
+    border-color : whitesmoke;
+    border-width : 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding : 15px 50px 15px 50px;
+
+    box-shadow: 10px 8px 1px skyblue;
+}
+
+.container
+{
+    gap : 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    margin: 0 auto;
+    margin-right: 0;
+    margin-left: 0;
+
+    place-content: center;
+    place-items : center;
+
+    min-width : fit-content;
+}
+
+.contain_all
+{
+    place-content: center;
+    place-items : center;
+}
+
+.container a 
+{
+    display: inline-block;
+    vertical-align: top; /* Adjust if multi-line text */
+    margin: 25px;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    background-color: #2375a8;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    transition: 300ms ease ;
+    margin-top : 80px;
+
+    place-content: center;
+    place-items : center;
+}
+
+.container a:hover
+{
+    background-color : #1b3f4a
+}
+
+.icon 
+{
+    display: grid;
+    margin: 0;
+    border: 0;
+}
+
+.container a span 
+{
+    display: block;
+    padding-top : 10px;
+    letter-spacing: 1.5px;
+}
+
+.overview
+{
+    position : relative;
+}
+
+.title_section1
+{
+    font-size : 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin-right : 57.5%;
+    padding-bottom : 20px;
+    position : relative;
+    text-decoration: none;
+
+    transform: translate(100px, 125px);
+
+    background-image : linear-gradient(90deg, blue, rgb(19, 140, 253));
+    background-size : 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    transition : 500ms ease;
+}
+
+.title_section1:hover
+{
+    background-size : 100% 6px;
+}
+
+.section1
+{
+    font-size : 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    line-height: 50px;
+    float : left;
+    margin-right : 50%;
+    padding : 10px;
+    position : relative;
+
+    transform : translate(80px, -400px);
+   
+    background-color: #205869;
+    background-size: cover;
+    transition: 300ms ease ;
+
+    border-color : whitesmoke;
+    border-width : 3px;
+    border-style: solid;
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 1px skyblue;
+
+}
+
+.section1:hover
+{
+    background-color : #1b3f4a
+}
+
+.overview img
+{
+    background-repeat : no-repeat;
+    height : 45%;
+    width : 45%;
+    margin: 0 auto;
+    padding : 0;
+
+    transform : translate(110%, 80px);
+
+    border : 5px solid whitesmoke;
+    border-radius: 20px;
+}
+
+#footer
+{
+    color: whitesmoke; background-color : #2e3030; border-bottom:1px solid #3B3B3B; height:160px;
+    margin-top: auto;
+    justify-self: flex-end;
+    width : 100vw;
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
+    place-content: center;
+    place-items : center;
+
+}
+
+.foot_text
+{
+    text-align: center;
+    padding-top : 40px;
+    padding-bottom : 40px;
+}
+
+@media all and (max-width : 988px)
+{
+    H1
+    {
+        float : none;
+        background-color: #0291bd; 
+    }
+
+    .logo
+    {
+        text-align: center;
+        justify-content: center;
+        padding-right: 5%;
+        padding-left : 5%;
+    }
+
+    .navigation_links
+    {
+        text-align: center;
+        font-size : 25px;
+    }
+
+    .navigation_links li
+    {
+        padding : 20px 40px;
+    }
+
+    .navigation_links li a
+    {
+        align-items: center;
+        display: flex;
+    }
+
+    #sl_text
+    {
+        top : 22%;
+    }
+
+    #sl_text2
+    {
+        top : 70%;
+    }
+}
+
+@media all and (max-width : 531px)
+{
+    #sl_text
+    {
+        font-size : 40px;
+        top : 20%;
+    }
+
+    #sl_text2
+    {
+        font-size : 20px;
+        top : 70%;
+    }
+}
