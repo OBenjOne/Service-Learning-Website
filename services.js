@@ -41,9 +41,9 @@ list=newList;
 for (let i=0;i<list.length;i++){
     createElements(list[i])
 }
-
 function getInput(){
-    text=document.getElementById("input").value;
+    text=document.getElementById("search").value;
+
     //document.getElementById("text").innerText=text;
     Search()
 }
@@ -59,7 +59,7 @@ function findMatchingWords(string){
 }
 
 function Search(){
-    const element = document.getElementById("div1");
+    const element = document.getElementById("results");
     element.innerHTML=''
     newList=findMatchingWords(text)
     for (let i=0;i<newList.length;i++){
@@ -75,6 +75,6 @@ function createElements(string){
     const para = document.createElement("p");
     const node = document.createTextNode(string);
     para.appendChild(node);
-    const element = document.getElementById("div1");
+    const element = document.getElementById("results");
     element.appendChild(para);
 }
